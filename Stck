@@ -1,0 +1,10 @@
+class Stck{
+private int topOfStack;
+private int[] aray;
+
+Stck(int length)
+{
+this.topOfStack=length;
+this.aray=new int[length-1];
+}
+
