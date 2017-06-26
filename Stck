@@ -2,21 +2,26 @@ class Stck{
 private int topOfStack;
 private int[] aray;
 
-Stck(int length)
+public Stck(int length)
 {
-this.topOfStack = length;
-this.aray = new int[length-1];
+this.topOfStack = length-1;
+this.aray = new int[length];
 }
 
 public void push(int item){
-if(this.topOfStack >= 0)
+if(this.topOfStack >= 0){
 this.aray[this.tpOfStack]=item;
 topOfStack--;
+}
 }
 
 public int pop(){
 if(this.topOfStack != this.aray.length-1){
 int item = this.aray[this.topOfStack+1);
 topOfStack++;
+return item;
+}
+else{
 return -1;
+}
 }
